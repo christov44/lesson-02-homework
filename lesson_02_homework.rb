@@ -47,13 +47,13 @@ class Waitlist
 
   def line_status
     @list.each do |next_in_line|
-      puts "#{next_in_line}"
+      "#{next_in_line}"
     end
   end
 
   def seat
     @list.shift
-    puts list
+    list
   end
 
 end
@@ -62,14 +62,14 @@ end
 taco_house = Waitlist.new
 puts taco_house.inspect
 
-taco_house.line_status
+puts taco_house.line_status
 
 taco_house.add_party("The Dude")
 puts taco_house.inspect
 
-taco_house.line_status
+puts taco_house.line_status
 
-taco_house.seat
+puts taco_house.seat
 puts taco_house.inspect
 
 
